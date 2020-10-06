@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/hangman"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="43dp"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/step0" />
+
+    <TextView
+        android:id="@+id/typedWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hangman"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="145dp"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="130dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/buttonQ"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="Q" />
+
+            <Button
+                android:id="@+id/buttonW"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="W" />
+
+            <Button
+                android:id="@+id/buttonE"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="E" />
+
+            <Button
+                android:id="@+id/buttonR"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="R" />
+
+            <Button
+                android:id="@+id/buttonT"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="T" />
+
+            <Button
+                android:id="@+id/buttonY"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="Y" />
+
+            <Button
+                android:id="@+id/buttonU"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="U" />
+
+            <Button
+                android:id="@+id/buttonI"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="I" />
+
+            <Button
+                android:id="@+id/buttonO"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="O" />
+
+            <Button
+                android:id="@+id/buttonP"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="P" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonA"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="A" />
+
+            <Button
+                android:id="@+id/buttonS"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="S" />
+
+            <Button
+                android:id="@+id/buttonD"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="D" />
+
+            <Button
+                android:id="@+id/buttonF"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="F" />
+
+            <Button
+                android:id="@+id/buttonG"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="G" />
+
+            <Button
+                android:id="@+id/buttonH"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="H" />
+
+            <Button
+                android:id="@+id/buttonJ"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="J" />
+
+            <Button
+                android:id="@+id/buttonK"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="K" />
+
+            <Button
+                android:id="@+id/buttonL"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="L" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonZ"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="Z" />
+
+            <Button
+                android:id="@+id/buttonX"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="X" />
+
+            <Button
+                android:id="@+id/buttonC"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="C" />
+
+            <Button
+                android:id="@+id/buttonV"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="V" />
+
+            <Button
+                android:id="@+id/buttonB"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="B" />
+
+            <Button
+                android:id="@+id/buttonN"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="N" />
+
+            <Button
+                android:id="@+id/buttonM"
+                style="@style/fakeKeyboard"
+                android:onClick="touchLetter"
+                android:text="M" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/hintButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="75dp"
+        android:layout_marginBottom="40dp"
+        android:onClick="displayHint"
+        android:text="Hint" />
+
+    <TextView
+        android:id="@+id/hintText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="180dp"
+        android:layout_marginBottom="55dp"
+        android:text="hint??"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/newGameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="291dp"
+        android:layout_marginBottom="12dp"
+        android:onClick="newGame"
+        android:text="New Game" />
+
+</RelativeLayout>

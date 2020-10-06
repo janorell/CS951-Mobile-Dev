@@ -1,0 +1,2 @@
+rootProject.name='fling2'
+include ':app'
